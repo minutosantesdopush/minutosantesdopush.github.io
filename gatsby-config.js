@@ -24,5 +24,6 @@ module.exports = {
       },
     },
     `mui-theme`,
+    'gatsby-plugin-sass'
   ],
 }
