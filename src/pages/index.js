@@ -5,10 +5,9 @@ import CardContent from '@material-ui/core/CardContent';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import Button from '@material-ui/core/Button';
-import { strip, trim } from '../util/html';
 
-const formatSubheader = ({ frontmatter, timeToRead }) =>
-  `Publicado em: ${frontmatter.date} • Tempo de leitura: ${timeToRead}min`;
+import { strip, trim } from '../util/html';
+import { formatSubheader } from '../util/post';
 
 export default function Home({ data }) {
   return data.posts.edges.map(({ node }, idx) => (
@@ -25,8 +24,9 @@ export default function Home({ data }) {
           </div>
       </CardContent>
       <CardActionArea>
-        <Button>Compartilhar</Button>
-        <Button>Ler Mais</Button>
+        <Button href={`/conteudo/${node.frontmatter.path}`} color="primary" size="large" fullWidth>
+          Ler Mais
+        </Button>
       </CardActionArea>
      </Card>
   ))
@@ -40,6 +40,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "D/MM/Y")
+            path
           }
           html
           timeToRead

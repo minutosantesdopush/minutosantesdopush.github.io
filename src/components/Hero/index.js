@@ -182,10 +182,10 @@ const insidePythonFlaskBubbles = {
 export const Hero = ({ classes }) => (
     <div className={classes.root}>
       <div className={classes.circlebg} />
-      <img className={classes.image} src="/body.png" />
-      <img className={clx(classes.image, classes.head)} src="/head.png" />
-      <img className={clx(classes.image, classes.flask)} src="/reactflask.png" />
-      <img className={classes.image} src="/hand.png" />
+      <img className={classes.image} src="/body.png" alt="animation body"/>
+      <img className={clx(classes.image, classes.head)} src="/head.png" alt="animation head"/>
+      <img className={clx(classes.image, classes.flask)} src="/reactflask.png" alt="animation flask"/>
+      <img className={classes.image} src="/hand.png" alt="animation hand" />
       <Bubble {...topReactFlaskBubbles} />
       <Bubble {...topPythonFlaskBubbles} />
       <Bubble {...insideReactFlaskBubbles} />

@@ -9,9 +9,10 @@ const makeGetMarkdownFromType = graphql => async (type, addtionalFields = "") =>
           frontmatter {
             path
             title
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "D/MM/Y")
           }
           html
+          timeToRead
           ${addtionalFields}
         }
       }
@@ -43,11 +44,12 @@ const makeGuidePage = createPage => ({
   fileAbsolutePath,
   path,
   html,
+  timeToRead,
 }) =>
   createPage({
     path: `/guia${makeGuideURI(fileAbsolutePath, path)}`,
     component: resolve(`src/templates/guide.js`),
-    context: { html, title, step },
+    context: { html, title, step, timeToRead },
   })
 
 exports.createPages = async ({ actions, graphql }) => {
