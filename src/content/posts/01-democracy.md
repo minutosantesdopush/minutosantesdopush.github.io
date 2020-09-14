@@ -1,6 +1,6 @@
 ---
 title: Precisamos democratizar a programação
-date: 2019-07-10
+date: 2020-09-14
 path: /precisamos-democratizar-a-programacao
 type: "post"
 ---
@@ -9,7 +9,12 @@ Desde que saí de um trabalho em 2018 e decidi tirar meu ano sabático, tomei a 
 
 Quando 2019 chegou, foquei em outras coisas e por mais que continuasse dando mentoria para algumas pessoas, o meu sonho de dividir conhecimento foi ficando adormecido até que recentemente trombei com um tweet, comecei a ler as respostas e me deparei com duas coisas que motivaram a escrita desta publicação:
 
-Tweet OriginalO tweet estava perguntando sobre isso por conta do campo "Qual sua profissão?" em sites e papeladas burocráticas no geral. Porém, isso desencadeou vários comentários engraçados, dignos do "você formata computador" e outros da mesma nuance. Eis que cheguei neste comentário:
+![tweet com os dizeres "Devs, quando te perguntam sua profissão vcs respondem o que?"](/posts/01/tweet1.png)
+
+O tweet estava perguntando sobre isso por conta do campo "Qual sua profissão?" em sites e papeladas burocráticas no geral. Porém, isso desencadeou vários comentários engraçados, dignos do "você formata computador" e outros da mesma nuance. Eis que cheguei neste comentário:
+
+![tweet com os dizeres "Cansei de dizer que era Programador. Agora falo: 'Faço aplicativos e sistemas iguais ao Instagram, Whatsapp e Facebook. Ai eles acham maneiro e perguntam se eu posso hackear as coisas.'. Já ;e melhor que perguntarem se eu formato computadores"](/posts/01/tweet2.png)
+
 
 E é aqui que mora o ápice desta introdução… Por exemplo, quando alguém fala que é médico, o que você pergunta? Posso listar algumas perguntas usuais como:
 - Qual faculdade cursou?
@@ -70,5 +75,3 @@ A falta de conhecimento gera um anseio e um medo em quem não conhece a programa
 Porém, isso em grande parte é nossa culpa. Somos programadores que nunca fazemos nada para tentar mudar esse cenário! Cansamos do ser "os caras que instalam impressora" ou os "hackers de facebook" porém não tentamos dar informações simples e rápidas e passar o que realmente fazemos. Quando me questionam sobre o que eu faço eu sempre explico: "Sabe quando você acessa o computador e acessa a internet e entra no Google? Eu escrevo comandos em um lingua que o computador entende pra ele poder fazer aquele site aparacer pra você". Normalmente isso gera muitas perguntas e dúvidas, minha noivas e minha mãe são profissionais em explicar minha profissão!
 
 Nossa missão como programadores e acima de tudo, democractas, é difundir e tornar o mais acessível possível informações e conhecimentos da nossa área para outras pessoas! E você tem contribuido para a disseminação ou retrocesso do T.I.?
-
-OBS: Se você não é de T.I. e ficou curioso sobre o mundo da programação e da Técnologia de Informação (sim é isso que T.I. siginifica), eu tenho uma publicação aqui na plataforma que fiz para nortear o pessoa sobre algumas coisas desconhecidas: https://medium.com/@guidiego/o-que-nunca-te-falaram-sobre-ti-fb6beec4a257

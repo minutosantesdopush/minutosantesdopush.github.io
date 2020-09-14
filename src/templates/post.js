@@ -46,6 +46,9 @@ const useStyles = withStyles(() => ({
       fontSize: '25px',
       padding: '10px',
       textAlign: 'center',
+    },
+    '& img': {
+      width: '100%',
     }
   }
 }));

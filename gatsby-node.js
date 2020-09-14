@@ -31,11 +31,11 @@ const makeGuideURI = (absolutePath, guidePath) => {
   return `/${splittedPath[guideBkpt + 1]}${guidePath}`
 }
 
-const makePostPage = createPage => ({ title, date, path, html }) =>
+const makePostPage = createPage => ({ title, date, path, html, timeToRead }) =>
   createPage({
     path: `/conteudo${path}`,
     component: resolve(`src/templates/post.js`),
-    context: { html, title, date },
+    context: { html, title, date, timeToRead },
   })
 
 const makeGuidePage = createPage => ({
