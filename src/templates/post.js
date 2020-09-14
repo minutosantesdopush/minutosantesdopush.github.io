@@ -1,4 +1,5 @@
 import React from "react"
+import Helmet from 'react-helmet';
 import { withStyles } from '@material-ui/core/styles';
 import { formatSubheader } from '../util/post';
 
@@ -54,16 +55,19 @@ const useStyles = withStyles(() => ({
 }));
 
 export const PostTemplate = ({ classes, pageContext: { title, date, html, timeToRead } }) => (
-  <div className={classes.post}>
-    <span className={classes.topper}>
-    { formatSubheader({ frontmatter: { date }, timeToRead })}
-    </span>
-    <h1 className={classes.title}>{title}</h1>
-    <div
-      className={classes.content}
-      dangerouslySetInnerHTML={{ __html: html }}
-    />
-  </div>
+  <>
+    <Helmet title={title} />
+    <div className={classes.post}>
+      <span className={classes.topper}>
+      { formatSubheader({ frontmatter: { date }, timeToRead })}
+      </span>
+      <h1 className={classes.title}>{title}</h1>
+      <div
+        className={classes.content}
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
+    </div>
+  </>
 )
 
 export default useStyles(PostTemplate);

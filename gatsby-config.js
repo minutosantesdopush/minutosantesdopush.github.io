@@ -7,6 +7,7 @@
 module.exports = {
   /* Your site config here */
   plugins: [
+    'gatsby-plugin-react-helmet',
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -24,6 +25,6 @@ module.exports = {
       },
     },
     `mui-theme`,
-    'gatsby-plugin-sass'
+    'gatsby-plugin-sass',
   ],
 }
