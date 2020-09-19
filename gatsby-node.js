@@ -3,13 +3,13 @@ const { resolve } = require(`path`)
 const makeGetMarkdownFromType = graphql => async (type, addtionalFields = "") =>
   await graphql(`
   {
-    allMarkdownRemark(filter: {frontmatter: {type: { eq: "${type}" }}}) {
+    allMarkdownRemark(filter: {frontmatter: {type: { eq: "${type}" }}}, sort: {fields: frontmatter___date, order: DESC}) {
       edges {
         node {
           frontmatter {
             path
             title
-            date(formatString: "D/MM/Y")
+            date(formatString: "DD/MM/Y")
           }
           html
           timeToRead

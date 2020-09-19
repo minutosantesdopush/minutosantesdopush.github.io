@@ -24,7 +24,7 @@ export default function Home({ data }) {
           </div>
       </CardContent>
       <CardActionArea>
-        <Button href={`/conteudo/${node.frontmatter.path}`} color="primary" size="large" fullWidth>
+        <Button href={`/conteudo${node.frontmatter.path}`} color="primary" size="large" fullWidth>
           Ler Mais
         </Button>
       </CardActionArea>
@@ -34,12 +34,12 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query {
-    posts: allMarkdownRemark(filter: {frontmatter: {type: {eq: "post"}}}) {
+    posts: allMarkdownRemark(filter: {frontmatter: {type: {eq: "post"}}}, sort: {fields: frontmatter___date, order: DESC}) {
       edges {
         node {
           frontmatter {
             title
-            date(formatString: "D/MM/Y")
+            date(formatString: "DD/MM/Y")
             path
           }
           html
